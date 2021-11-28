@@ -1,0 +1,21 @@
+{
+  "name": "marton/version-bundle",
+  "description": "Mautic Version bundle",
+  "type": "mautic-plugin",
+  "version": "0.5",
+  "require": {
+    "php": "^7.4|^8.0",
+    "mautic/core-lib": "^4.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.0",
+    "phpunit/phpunit": "^9.5",
+    "symplify/easy-coding-standard": "^6.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "MauticPlugin\\MauticVersionBundle\\": ""
+    }
+  }
+}
