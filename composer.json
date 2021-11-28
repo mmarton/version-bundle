@@ -18,5 +18,10 @@
     "psr-4": {
       "MauticPlugin\\MauticVersionBundle\\": ""
     }
+  },
+  "scripts": {
+    "phpunit": "vendor/bin/phpunit",
+    "phpstan": "vendor/bin/phpstan analyse",
+    "phpcs": "vendor/bin/phpcs"
   }
 }
