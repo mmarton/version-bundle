@@ -8,7 +8,7 @@ use Mautic\PluginBundle\Integration\AbstractIntegration;
 
 class VersionIntegration extends AbstractIntegration
 {
-    const PLUGIN_NAME = 'Version';
+    private const PLUGIN_NAME = 'Version';
 
     public function getName(): string
     {

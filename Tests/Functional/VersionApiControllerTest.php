@@ -16,7 +16,11 @@ class VersionApiControllerTest extends MauticMysqlTestCase
         $responseArray = json_decode($clientResponseContent, true, 512, JSON_THROW_ON_ERROR);
 
         self::assertTrue($clientResponse->isOk(), 'Return code must be 200.');
-        self::assertResponseHeaderSame('content-type', 'application/json', 'Response content type must be application/json.');
+        self::assertResponseHeaderSame(
+            'content-type',
+            'application/json',
+            'Response content type must be application/json.'
+        );
         self::assertSame(MAUTIC_VERSION, $responseArray['version'], 'Api response must be the actual version.');
     }
 }

@@ -4,15 +4,16 @@
   "type": "mautic-plugin",
   "version": "0.5",
   "require": {
-    "php": "^7.4|^8.0",
-    "mautic/core-lib": "^4.0"
+    "php": "^7.4|^8.0"
   },
   "require-dev": {
     "phpstan/phpstan": "^1.0",
+    "phpstan/phpstan-deprecation-rules": "^1.0",
+    "phpstan/phpstan-strict-rules": "^1.0",
     "phpunit/phpunit": "^9.5",
-    "symplify/easy-coding-standard": "^6.0"
+    "squizlabs/php_codesniffer": "^3.2"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
       "MauticPlugin\\MauticVersionBundle\\": ""

@@ -32,6 +32,8 @@
             <directory suffix=".php">.</directory>
         </include>
         <exclude>
+            <directory>Config</directory>
+            <directory>Tests</directory>
             <directory>vendor</directory>
         </exclude>
     </coverage>

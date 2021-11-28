@@ -1,0 +1,17 @@
+includes:
+	- vendor/phpstan/phpstan-strict-rules/rules.neon
+	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
+
+parameters:
+	level: 6
+	paths:
+		- Config
+		- Controller
+		- Integration
+		- Tests
+	scanDirectories:
+		- ../../app
+		- ../../vendor
+	checkGenericClassInNonGenericObjectType: false
+	checkMissingIterableValueType: false
+	checkUninitializedProperties: true
